@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">File</th>
+      <th class="text-right" scope="col">Size</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let file of files">
+      <td><a href="#" (click)="onSelect(file)"><img src="https://n6-img-fp.akamaized.net/free-icon/mp4-file-rounded-rectangular-stroke-interface-symbol_318-71657.jpg?size=338&ext=jpg" height="25px" *ngIf="file.type === 'mp4'" /><img src="http://a4.att.hudong.com/11/17/20200000013920144722177592563_s.jpg" height="25px" *ngIf="file.type === 'pptx'" /> {{file.name}}</a></td>
+      <td class="text-right">{{file.size/1000 | number: '1.1-2'}} KB</td>
+      <td>{{file.mtime | date: 'MM/dd/yyyy' }}</td>
+    </tr>
+  </tbody>
+</table>

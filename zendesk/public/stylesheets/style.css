@@ -1,0 +1,7 @@
+body div.container {
+  margin-top: 20px;
+}
+
+.modal {
+  background: rgba(0,0,0,0.6);
+}

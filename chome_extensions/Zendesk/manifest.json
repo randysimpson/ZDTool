@@ -1,0 +1,27 @@
+{
+    "name": "Zendesk",
+    "version": "1.0",
+    "description": "Zendesk Extension!",
+    "permissions": ["activeTab", "declarativeContent"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": ["custom.js"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/zd.png",
+        "32": "images/zd.png",
+        "48": "images/zd.png",
+        "128": "images/zd.png"
+      }
+    },
+    "icons": {
+      "16": "images/zd.png",
+      "32": "images/zd.png",
+      "48": "images/zd.png",
+      "128": "images/zd.png"
+    },
+    "manifest_version": 2
+}
